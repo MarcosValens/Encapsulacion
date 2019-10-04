@@ -28,4 +28,22 @@ public class Texto {
         return personas;
     }
 
+    public void listadoPersonas(ArrayList<Persona> personas){
+        for (Persona persona:personas) {
+            System.out.println(persona.getNombre());
+            System.out.println(persona.getApellido());
+            System.out.println(persona.getEdad());
+            System.out.println(persona.getSexo());
+            System.out.println(persona.getDni());
+        }
+    }
+
+    void eliminarPersona(int cantidad) {
+        int contador = 0;
+        while (contador < cantidad) {
+            personas.remove(personas.remove(0));
+            contador++;
+        }
+    }
+
 }
