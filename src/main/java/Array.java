@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Array {
     private int tamaño;
     private Persona[] personas;
