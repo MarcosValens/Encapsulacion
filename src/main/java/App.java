@@ -72,7 +72,8 @@ public class App {
                         " apellidos, sexo, edad y DNI (separado por comas(,))");
                 input.nextLine();
                 auxiliar = input.nextLine();
-                Texto texto = new Texto(auxiliar);
+                Texto texto = new Texto();
+                texto.crearPersona(auxiliar);
                 ArrayList<Persona> personas = texto.crearPersona(auxiliar);
                 while (repetir) {
                     System.out.println("¿Quieres añadir mas personas?");

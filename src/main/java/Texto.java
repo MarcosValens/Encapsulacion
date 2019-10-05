@@ -4,7 +4,7 @@ public class Texto {
     private String persona;
     private ArrayList<Persona> personas = new ArrayList<Persona>();
 
-    public Texto(String persona) {
+    public Texto() {
         this.persona = persona;
     }
 
@@ -38,12 +38,14 @@ public class Texto {
         }
     }
 
-    void eliminarPersona(int cantidad) {
+    public void eliminarPersona(int cantidad) {
         int contador = 0;
         while (contador < cantidad) {
             personas.remove(personas.remove(0));
             contador++;
         }
     }
-
+    public int contarPersonas(){
+        return personas.size();
+    }
 }

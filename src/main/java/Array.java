@@ -26,13 +26,17 @@ public class Array {
     }
 
     public void eliminar(int cantidad) {
-        Persona[] personasFinal = new Persona[cantidad];
+        Persona[] personasFinal = new Persona[personas.length-cantidad];
         int contador = 0;
         for (int i = cantidad; i < personas.length; i++) {
             personasFinal[contador] = personas[i];
             contador++;
         }
         personas = personasFinal;
+    }
+
+    public int totalPersonas(){
+        return personas.length;
     }
 
     public int getTamaño() {
